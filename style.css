@@ -1,0 +1,227 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.semi-bold{
+    font-weight: 600;
+}
+.underline{
+    text-decoration: underline;
+}
+.text-24{
+    font-size: 24px;
+}
+.text-36{
+    font-size: 36px;
+}
+.text-48{
+    font-size: 48px;
+}
+/*Colors*/
+.white{
+    color: #FFFFFF;
+}
+.black{
+    color:#141414;
+}
+.beige{
+    color: #FDDDC6;
+}
+.red{
+    color: #FF001E;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+.bg-black{
+    background-color: #141414;
+}
+
+/*Custom classes*/
+.pointer{
+    cursor: pointer;
+}
+.not-available{
+    cursor: not-allowed;
+}
+.help{
+    cursor: help;
+}
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.hidden{
+    display: none;
+}
+.gap-05{
+    gap: 0.5em;
+}
+.gap-1{
+    gap: 1em;
+}
+.gap-2{
+    gap: 2em;
+}
+.items-center{
+    align-items: center;
+}
+.justify-items-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.self-end{
+    align-self: flex-end;
+}
+.self-center{
+    align-self: center;
+}
+.justify-self-center{
+    justify-self: center;
+}
+.justify-self-end{
+    justify-self: flex-end;
+}
+.p-05{
+    padding: 0.5em;
+}
+.p-1{
+    padding: 1em;
+}
+.pt-2{
+    padding-top: 2em;
+}
+.pt-4{
+    padding-top: 4em;
+}
+.m-1{
+    margin: 1em;
+}
+.m-2{
+    margin: 2em;
+}
+.mx-2{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.h-screen{
+    height: 100vh;
+}
+.w-screen{
+    width: 100vw;
+}
+.w-50{
+    width: 50%;
+}
+.h-50{
+    height: 50%;
+}
+.svg-w-h{
+    height: 32px;
+    width: 32px;
+}
+.svg-w-h-small{
+    width: 24px;
+    height: 24px;
+}
+.rounded-5-top{
+    border-radius: 5px 5px 0px 0px;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.rounded-20{
+    border-radius: 20px;
+}
+.rounded-20-top{
+    border-radius: 20px 20px 0px 0px;
+}
+.pointer-events-disabled{
+    pointer-events: none;
+}
+.desktop-overflow{
+    overflow: hidden;
+}
+
+/*ANIMATIONS*/
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #141414; /* The typwriter cursor */
+    white-space:nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 2.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+}
+.extend-anim{
+    animation: extendDrawer forwards 1s;
+}
+.collapse-anim{
+    animation: collapseDrawer forwards 1s;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #141414; }
+}
+
+@keyframes extendDrawer {
+    from{height: 20px;}
+    to{height: 100px;}
+}
+@keyframes collapseDrawer {
+    from{height: 100px;}
+    to{height: 20px;}
+}
+.orbit {
+    position: absolute;
+}
+
+
+/*ALL*/
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 800px) {
+    .mobile-row-col {
+        flex-direction: column!important;
+    }
+    .mobile-full-width{
+        width: 100%!important;
+    }
+    .mobile-full-height{
+        height: 50em;
+    }
+    .mobile-overflow{
+        overflow-y: scroll!important;
+    }
+  }
